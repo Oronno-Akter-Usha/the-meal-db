@@ -11,11 +11,13 @@ import {
 import Home from './components/Home/Home.jsx';
 import Foods from './components/Foods/Foods.jsx';
 import FoodDetails from './components/FoodDetails/FoodDetails.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
         {
           path:'/',
           element: <Home></Home>,
+          errorElement: <ErrorPage></ErrorPage>,
           children:[
             {
               path: '/foods',
